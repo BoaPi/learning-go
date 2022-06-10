@@ -1,11 +1,14 @@
 # learning-go 🎓
-> **Disclaimer** repo which is used to learn go, by following the official documentation. No real use here other than to the progress and stay motivated 🥳
+> **Disclaimer** repo which is used to learn go, by following the official documentation. No real use here other than to see the progress and stay motivated 🥳
 
 ## content of this repo
 
 | #   | Topic                                                                    |
 | --- | ------------------------------------------------------------------------ |
 | 1   | [hello world](hello) with external module for a fancy print on console 🙃 |
+| 2   |                                                                          |
+| 3   |                                                                          |
+| 4   |                                                                          |
 
 ## learned so far
 
