@@ -16,5 +16,9 @@
 * [x] how to run go code with `go run .`
 * [x] Go code is grouped in packages
 * [x] packages are grouped in modules
-* [ ] 
+* [x] modules specifies dependencies, Go version and other modules
+* [x] how to write a package
+* [x] that capitalized function names, indicates that the function can be called from an other package. This is known as *exported names*
+* [x] what a format string is
+* [x] how to use local modules
 * [ ] more to come...
