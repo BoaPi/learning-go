@@ -3,9 +3,9 @@
 
 ## content of this repo
 
-| #   | Topic                                                 |
-| --- | ----------------------------------------------------- |
-| 1   | [hello world](hello) with external module for a fancy |
+| #   | Topic                                                                    |
+| --- | ------------------------------------------------------------------------ |
+| 1   | [hello world](hello) with external module for a fancy print on console 🙃 |
 
 ## learned so far
 
@@ -14,4 +14,7 @@
 * [x] how to add external go modules by using `go mod tidy`
 * [x] using `go fmt` for formatting go code
 * [x] how to run go code with `go run .`
+* [x] Go code is grouped in packages
+* [x] packages are grouped in modules
+* [ ] 
 * [ ] more to come...
