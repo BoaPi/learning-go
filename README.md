@@ -24,4 +24,5 @@
 * [x] that capitalized function names, indicates that the function can be called from an other package. This is known as *exported names*
 * [x] what a format string is
 * [x] how to use local modules
+* [x] how to work with multiple modules by using *go.work*
 * [ ] more to come...
