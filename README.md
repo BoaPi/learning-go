@@ -36,5 +36,12 @@
 * [x] use `math/rand` to create a seed
 * [x] use `init()` function to generate a new seed each program run
 * [x] how to work with a slice
-* [ ] get to know the packages `math` and `time`
+* [x] get to know the packages `math` and `time`
+* [x] how to re-use an existing function adn build on it an other function that handles same input and output but as maps
+* [x] what a `map` is, how to create a `map`, how to add entries to a `map` and what types needs to be defined on a `map`
+* [x] how to declare and assign values to a `map`
+* [x] how to write a simple loop
+* [x] how to add test cases with the name of the package `<package_name>_test.go`
+* [x] how to name test cases
+* [x] how to assert for a result
 * [ ] more to come...
