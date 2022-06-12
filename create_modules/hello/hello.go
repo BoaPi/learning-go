@@ -13,9 +13,7 @@ func main() {
 	log.SetFlags(0)
 
 	// use greeting package 'Hello' function
-	var message string
-	var err error
-	message, err = greetings.Hello("Gladys")
+	message, err := greetings.Hello("Gladys")
 
 	// if an error was received, print to console 
 	// exit program
