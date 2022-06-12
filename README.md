@@ -25,4 +25,9 @@
 * [x] what a format string is
 * [x] how to use local modules
 * [x] how to work with multiple modules by using *go.work*
+* [x] how to add error handling
+* [x] introduction to the standard error package *errors*
+* [x] multiple return value
+* [x] how to use *nil*
+* [x] how to short declare and assign variables
 * [ ] more to come...
