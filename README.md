@@ -21,13 +21,20 @@
 * [x] packages are grouped in modules
 * [x] modules specifies dependencies, Go version and other modules
 * [x] how to write a package
-* [x] that capitalized function names, indicates that the function can be called from an other package. This is known as *exported names*
+* [x] that capitalized function names, indicates that the function can be called from an other package. This is known as `exported names`
 * [x] what a format string is
 * [x] how to use local modules
-* [x] how to work with multiple modules by using *go.work*
+* [x] how to work with multiple modules by using `go.work`
 * [x] how to add error handling
-* [x] introduction to the standard error package *errors*
+* [x] introduction to the standard error package `errors`
 * [x] multiple return value
-* [x] how to use *nil*
+* [x] how to use `nil`
+* [x] `nil` is a return value for an error, that indicated that everything is fine
 * [x] how to short declare and assign variables
+* [x] a `slice` is an array with dynamic size
+* [x] lower case name of functions, makes them only accessible to the code in its own package
+* [x] use `math/rand` to create a seed
+* [x] use `init()` function to generate a new seed each program run
+* [x] how to work with a slice
+* [ ] get to know the packages `math` and `time`
 * [ ] more to come...
