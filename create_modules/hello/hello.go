@@ -15,7 +15,7 @@ func main() {
 	// use greeting package 'Hello' function
 	message, err := greetings.Hello("Gladys")
 
-	// if an error was received, print to console 
+	// if an error was received, print to console
 	// exit program
 	if err != nil {
 		log.Fatal(err)
