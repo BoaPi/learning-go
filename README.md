@@ -49,4 +49,5 @@
 * [x] to use `Fatalf` method to print to console and end execution
 * [x] how to use `go build` command to build the binary
 * [x] how to get install path for the binary with `go list -f '{{.Target}}'`
+* [x] how to adjust zsh config to use installed binaries
 * [ ] more to come...
