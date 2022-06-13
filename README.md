@@ -47,4 +47,6 @@
 * [x] how to name test cases
 * [x] how to assert for a result
 * [x] to use `Fatalf` method to print to console and end execution
+* [x] how to use `go build` command to build the binary
+* [x] how to get install path for the binary with `go list -f '{{.Target}}'`
 * [ ] more to come...
