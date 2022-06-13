@@ -42,6 +42,9 @@
 * [x] how to declare and assign values to a `map`
 * [x] how to write a simple loop
 * [x] how to add test cases with the name of the package `<package_name>_test.go`
+* [x] use the Go standard testing package for logging and reporting
+* [x] about type `T` to pass into test functions for manage test state and formatted test logs
 * [x] how to name test cases
 * [x] how to assert for a result
+* [x] to use `Fatalf` method to print to console and end execution
 * [ ] more to come...
