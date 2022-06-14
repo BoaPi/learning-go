@@ -1,7 +1,8 @@
 go 1.18
 
 use (
-	./hello
 	./create_modules/greetings
 	./create_modules/hello
+	./create_packages
+	./hello
 )
