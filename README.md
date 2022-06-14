@@ -25,6 +25,8 @@
 * [x] what a format string is
 * [x] how to use local modules
 * [x] how to work with multiple modules by using `go.work`
+* [x] how to initialize a workspace with `go work init`
+* [x] how to update a workspace with `go work use`
 * [x] how to add error handling
 * [x] introduction to the standard error package `errors`
 * [x] multiple return value
