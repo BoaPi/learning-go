@@ -1,5 +1,7 @@
 go 1.18
 
-use ./hello
-use ./create_modules/greetings
-use ./create_modules/hello
+use (
+	./hello
+	./create_modules/greetings
+	./create_modules/hello
+)
