@@ -5,4 +5,5 @@ use (
 	./create_modules/hello
 	./create_packages
 	./hello
+	./web_server
 )
