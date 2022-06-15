@@ -1,5 +1,11 @@
 package main
 
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
 // album represents data about the record album
 type album struct {
 	ID     string  `json:"id"`
