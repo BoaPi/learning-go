@@ -14,3 +14,17 @@ var albums = []album{
 	{ID: "2", Title: "Jeru", Artist: "Gerry Mulligan", Price: 17.99},
 	{ID: "3", Title: "Sarah Vaughan and Clifford Brown", Artist: "Sarah Vaughan", Price: 39.99},
 }
+
+// initialize router and attached handlers to relative paths
+func main() {
+	router := gin.Default()
+	router.GET("/albums", getAlbums)
+
+	// attach router to a server on given address
+	router.Run("localhost:8080")
+}
+
+// getAlbums endpoint responses with the albums slice serialized as JSON
+func getAlbums(c *gin.Context) {
+	c.IndentedJSON(http.StatusOK, albums)
+}
