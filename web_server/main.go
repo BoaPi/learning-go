@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -44,6 +45,7 @@ func postAlbums(c *gin.Context) {
 	err := c.BindJSON(&newAlbum)
 
 	if err != nil {
+		fmt.Println("Bad Request, there is probably something wrong in the request")
 		return
 	}
 
