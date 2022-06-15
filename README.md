@@ -52,4 +52,12 @@
 * [x] how to use `go build` command to build the binary
 * [x] how to get install path for the binary with `go list -f '{{.Target}}'`
 * [x] how to adjust zsh config to use installed binaries
+* [x] to name a module `main.go` if it is standalone program
+* [x] how to declare a `struct` for representing complex objects
+* [x] to use `json:"<key-name>"` to prevent capitalized JSON keys after serialization
+* [x] to use `Context.IndentedJSON` from `gin` for easy debugging, instead of `Context.JSON`
+* [x] how to initialize a `gin` router
+* [x] how to add a handler to a `gin` router
+* [x] how to attache the `gin` router to a server and start tshe server
+* [x] how to use `cURL` to fetch data from the given endpoint
 * [ ] more to come...
