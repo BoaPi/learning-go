@@ -60,4 +60,6 @@
 * [x] how to add a handler to a `gin` router
 * [x] how to attache the `gin` router to a server and start tshe server
 * [x] how to use `cURL` to fetch data from the given endpoint
+* [x] pointer syntax - `*<pointer-name>`
+* [x] how to see the memory address of a pointer - `&<pointer-name>`
 * [ ] more to come...
