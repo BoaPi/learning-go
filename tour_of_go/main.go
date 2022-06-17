@@ -15,3 +15,10 @@ func main() {
 func welcome() {
 	fmt.Println("Welcome to the Tour of Go")
 }
+
+// Welcome with some time
+func welcomeWithTime() {
+	fmt.Println("Welcome to the Tour of Go")
+
+	fmt.Println("It is: ", time.Now())
+}
