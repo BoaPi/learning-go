@@ -7,6 +7,12 @@ import (
 
 // all lessons from tour of Go bundled together
 func main() {
+	// declare a map of lessons
+	lessons := map[int]func(){
+		1: welcome,
+		2: welcomeWithTime,
+	}
+
 	welcome()
 }
 
