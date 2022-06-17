@@ -16,6 +16,22 @@ func main() {
 	welcome()
 }
 
+// loop over lessons map and run each one with some additional logs around
+func runLessons(lessons map[int]func()) {
+	for key, fn := range lessons {
+		fmt.Println("---------------")
+		fmt.Println("Lesson: ", key)
+		fmt.Println("")
+
+		// call lesson code
+		fn()
+
+		fmt.Println("")
+		fmt.Println("---------------")
+		fmt.Println("")
+	}
+}
+
 // Welcome
 func welcome() {
 	fmt.Println("Welcome to the Tour of Go")
