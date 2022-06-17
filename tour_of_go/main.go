@@ -13,7 +13,7 @@ func main() {
 		2: welcomeWithTime,
 	}
 
-	welcome()
+	runLessons(lessons)
 }
 
 // loop over lessons map and run each one with some additional logs around
