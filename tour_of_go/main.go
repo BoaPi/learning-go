@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"time"
 )
 
 // all lessons from tour of Go bundled together
