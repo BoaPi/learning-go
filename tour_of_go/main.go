@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/rand"
 	"time"
 )
@@ -12,7 +13,8 @@ func main() {
 	lessons := map[int]func(){
 		1: welcome,
 		2: welcomeWithTime,
-		3: randomLesson,
+		3: randomNumber,
+		4: mathPackage,
 	}
 
 	runLessons(lessons)
@@ -46,6 +48,10 @@ func welcomeWithTime() {
 	fmt.Println("It is: ", time.Now())
 }
 
-func randomLesson() {
+func randomNumber() {
 	fmt.Println("Some random number: ", rand.Int())
+}
+
+func mathPackage() {
+	fmt.Printf("Now you have %g problems", math.Sqrt(7))
 }
