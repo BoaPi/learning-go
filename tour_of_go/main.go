@@ -48,10 +48,14 @@ func welcomeWithTime() {
 	fmt.Println("It is: ", time.Now())
 }
 
+// using rand function of math package to generate random number
+// will always be the same, if the seed is not adjusted
 func randomNumber() {
 	fmt.Println("Some random number: ", rand.Int())
 }
 
+// using Printf to use distinct format in logged string
+// using math package and exported Sqrt() function
 func mathPackage() {
 	fmt.Printf("Now you have %g problems", math.Sqrt(7))
 }
