@@ -61,6 +61,7 @@ func mathPackage() {
 	fmt.Printf("Now you have %g problems", math.Sqrt(7))
 }
 
+// only capitalized functions & values are accessible from outside the package
 func mathExports() {
 	fmt.Println("Here comes the number Pi:", math.Pi)
 }
