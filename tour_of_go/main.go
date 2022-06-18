@@ -15,6 +15,7 @@ func main() {
 		2: welcomeWithTime,
 		3: randomNumber,
 		4: mathPackage,
+		5: mathExports,
 	}
 
 	runLessons(lessons)
@@ -58,4 +59,8 @@ func randomNumber() {
 // using math package and exported Sqrt() function
 func mathPackage() {
 	fmt.Printf("Now you have %g problems", math.Sqrt(7))
+}
+
+func mathExports() {
+	fmt.Println("Here comes the number Pi:", math.Pi)
 }
