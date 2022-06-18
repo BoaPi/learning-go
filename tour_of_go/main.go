@@ -16,6 +16,7 @@ func main() {
 		3: randomNumber,
 		4: mathPackage,
 		5: mathExports,
+		6: mathAddingUp,
 	}
 
 	runLessons(lessons)
@@ -64,4 +65,14 @@ func mathPackage() {
 // only capitalized functions & values are accessible from outside the package
 func mathExports() {
 	fmt.Println("Here comes the number Pi:", math.Pi)
+}
+
+// function to add up two numbers
+func add(x,y int) {
+	fmt.Printf("%v plus %v = %v", x, y, x + y)
+}
+
+// using declared function and pass parameters
+func mathAddingUp() {
+	add(31, 75)
 }
