@@ -17,6 +17,7 @@ func main() {
 		4: mathPackage,
 		5: mathExports,
 		6: mathAddingUp,
+		7: multiReturn,
 	}
 
 	runLessons(lessons)
@@ -67,9 +68,9 @@ func mathExports() {
 	fmt.Println("Here comes the number Pi:", math.Pi)
 }
 
-// function to add up two numbers
-func add(x,y int) {
-	fmt.Printf("%v plus %v = %v", x, y, x + y)
+// function to add up two numbers for mathAddingUp()
+func add(x, y int) {
+	fmt.Printf("%v plus %v = %v", x, y, x+y)
 }
 
 // using declared function and pass parameters
@@ -80,4 +81,15 @@ func mathAddingUp() {
 // just swaps the two input strings order
 func swap(x, y string) (string, string) {
 	return y, x
+}
+
+// multiple returns
+func multiReturn() {
+	a := "Hello"
+	b := "World"
+
+	swappedA, swappedB := swap(a, b)
+
+	fmt.Printf("Original Order: %q %q \n", a, b)
+	fmt.Printf("New Order: %q %q", swappedA, swappedB)
 }
