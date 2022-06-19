@@ -20,6 +20,7 @@ func main() {
 		multiReturn,
 		nakedReturn,
 		declareCardio,
+		multiDeclareAndInitialization,
 	}
 
 	runLessons(lessons)
@@ -115,4 +116,12 @@ func declareCardio() {
 	var i int
 
 	fmt.Println(c, python, java, i)
+}
+
+// declare and initialize multiple variables
+func multiDeclareAndInitialization() {
+	var i, j int = 1, 2
+
+	fmt.Println("Using add() function from former lesson here")
+	add(i, j)
 }
