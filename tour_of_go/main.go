@@ -120,7 +120,7 @@ func declareCardio() {
 
 // declare and initialize multiple variables
 func multiDeclareAndInitialization() {
-	var i, j int = 1, 2
+	i, j := 1, 2
 
 	fmt.Println("Using add() function from former lesson here")
 	add(i, j)
