@@ -3,12 +3,13 @@
 
 ## content of this repo
 
-| #   | Topic                                                                    |
-| --- | ------------------------------------------------------------------------ |
-| 1   | [hello world](hello) with external module for a fancy print on console 🙃 |
-| 2   |                                                                          |
-| 3   |                                                                          |
-| 4   |                                                                          |
+| #   | Topic                                                                                                        |
+| --- | ------------------------------------------------------------------------------------------------------------ |
+| 1   | [hello world](hello) with external module for a fancy print on console 🙃                                     |
+| 2   | [create modules](create_modules) how to work with multiple modules                                           |
+| 3   | [create packages](create_packages) how to work with multiple packages                                        |
+| 4   | [web server](web_server) creating a first web server with `gin` framework and some API endpoints             |
+| 5   | [Tour of Go](tour_of_go) just the complete TOur of Go, self written down to to get the syntax in the fingers |
 
 ## learned so far
 
