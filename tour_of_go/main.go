@@ -18,6 +18,7 @@ func main() {
 		5: mathExports,
 		6: mathAddingUp,
 		7: multiReturn,
+		8: nakedReturn,
 	}
 
 	runLessons(lessons)
@@ -100,4 +101,9 @@ func split(sum int) (x, y int) {
 	y = sum - x
 
 	return
+}
+
+// use naked return of slit function
+func nakedReturn() {
+	fmt.Println(split(10))
 }
