@@ -65,4 +65,5 @@
 * [x] how to see the memory address of a pointer - `&<pointer-name>`
 * [x] how to receive the parameter of a URL using gins `c.Param()`
 * [x] how to send a `404 - Not Found` response
+* [x] short assignments are only available inside function
 * [ ] more to come...
