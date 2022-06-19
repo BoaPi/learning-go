@@ -76,3 +76,8 @@ func add(x,y int) {
 func mathAddingUp() {
 	add(31, 75)
 }
+
+// just swaps the two input strings order
+func swap(x, y string) (string, string) {
+	return y, x
+}
