@@ -19,6 +19,7 @@ func main() {
 		mathAddingUp,
 		multiReturn,
 		nakedReturn,
+		declareCardio,
 	}
 
 	runLessons(lessons)
@@ -106,4 +107,12 @@ func split(sum int) (x, y int) {
 // use naked return of slit function
 func nakedReturn() {
 	fmt.Println(split(10))
+}
+
+// declare variables lesson
+func declareCardio() {
+	var c, python, java bool
+	var i int
+
+	fmt.Println(c, python, java, i)
 }
