@@ -10,25 +10,25 @@ import (
 // all lessons from tour of Go bundled together
 func main() {
 	// declare a map of lessons
-	lessons := map[int]func(){
-		1: welcome,
-		2: welcomeWithTime,
-		3: randomNumber,
-		4: mathPackage,
-		5: mathExports,
-		6: mathAddingUp,
-		7: multiReturn,
-		8: nakedReturn,
+	lessons := []func(){
+		welcome,
+		welcomeWithTime,
+		randomNumber,
+		mathPackage,
+		mathExports,
+		mathAddingUp,
+		multiReturn,
+		nakedReturn,
 	}
 
 	runLessons(lessons)
 }
 
 // loop over lessons map and run each one with some additional logs around
-func runLessons(lessons map[int]func()) {
+func runLessons(lessons []func()) {
 	for key, fn := range lessons {
 		fmt.Println("---------------")
-		fmt.Println("Lesson: ", key)
+		fmt.Println("Lesson: ", key + 1)
 		fmt.Println("")
 
 		// call lesson code
