@@ -93,3 +93,11 @@ func multiReturn() {
 	fmt.Printf("Original Order: %q %q \n", a, b)
 	fmt.Printf("New Order: %q %q", swappedA, swappedB)
 }
+
+// some random computations with numbers and a naked return
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+
+	return
+}
