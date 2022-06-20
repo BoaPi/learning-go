@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"math/cmplx"
 	"math/rand"
 	"time"
 )
@@ -30,7 +31,7 @@ func main() {
 func runLessons(lessons []func()) {
 	for key, fn := range lessons {
 		fmt.Println("---------------")
-		fmt.Println("Lesson: ", key + 1)
+		fmt.Println("Lesson: ", key+1)
 		fmt.Println("")
 
 		// call lesson code
@@ -125,3 +126,10 @@ func multiDeclareAndInitialization() {
 	fmt.Println("Using add() function from former lesson here")
 	add(i, j)
 }
+
+// some basic types
+var (
+	ToBe   bool       = false
+	MaxInt uint64     = 1<<64 - 1
+	z      complex128 = cmplx.Sqrt(-5 + 12i)
+)
