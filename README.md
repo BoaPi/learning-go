@@ -73,4 +73,6 @@
 * [x] numeric `const` are high-precision values
 * [x] untyped constants, takes the needed by its context
 * [x] that there is left shift `<<` & `>>` right shift operators
+* [x] loop is build of `init statement`, `condition statement` and `post statement`
+* [x] `init statement` and `post statement` is optional
 * [ ] more to come...

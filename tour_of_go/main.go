@@ -29,6 +29,7 @@ func main() {
 		constants,
 		moreConstants,
 		simpleLoopToSum,
+		loopWithoutOptionalStatements,
 	}
 
 	runLessons(lessons)
@@ -229,4 +230,18 @@ func simpleLoopToSum() {
 	}
 
 	fmt.Println("Sum Value: ", sum)
+}
+
+// simple loop without init and post statement
+func loopWithoutOptionalStatements() {
+	sum := 1
+
+	fmt.Println("Start Value: ", sum)
+
+	for ; sum < 1000; {
+		sum += sum
+		fmt.Println("Value in loop: ", sum)
+	}
+
+	fmt.Println("Final result: ", sum)
 }
