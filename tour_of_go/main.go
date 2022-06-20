@@ -28,6 +28,7 @@ func main() {
 		typeInference,
 		constants,
 		moreConstants,
+		simpleLoopToSum,
 	}
 
 	runLessons(lessons)
@@ -217,4 +218,15 @@ func moreConstants() {
 	fmt.Printf("Type: %T, Value: %v\n", needFloat(big), needFloat(big))
 	fmt.Printf("Type: %T, Value: %v\n", needInt(small), needInt(small))
 	fmt.Printf("Type: %T, Value: %v\n", needFloat(small), needFloat(small))
+}
+
+// some simple loops
+func simpleLoopToSum() {
+	sum := 0
+
+	for i := 0; i < 10; i++ {
+		sum += 1
+	}
+
+	fmt.Println("Sum Value: ", sum)
 }
