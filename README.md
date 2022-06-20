@@ -77,4 +77,5 @@
 * [x] `init statement` and `post statement` is optional
 * [x] `for loop` is Go's `while` by omitting the optional statements
 * [x] a `for loop` without any statement is an infinite loop
+* [x] `if statements` do not need `()` around the statement but `{}` for the body
 * [ ] more to come...
