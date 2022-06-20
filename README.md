@@ -69,4 +69,8 @@
 * [x] some basic types
 * [x] zero values of certain types when declaring without assigning a value
 * [x] what type inference is
+* [x] `const` can not use short assignment `:=`
+* [x] numeric `const` are high-precision values
+* [x] untyped constants, takes the needed by its context
+* [x] that there is left shift `<<` & `>>` right shift operators
 * [ ] more to come...
