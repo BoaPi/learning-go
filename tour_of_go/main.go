@@ -25,6 +25,7 @@ func main() {
 		basicTypes,
 		zeroValues,
 		typeConversion,
+		typeInference,
 	}
 
 	runLessons(lessons)
@@ -175,4 +176,15 @@ func typeConversion() {
 	fmt.Printf("Type: %T, Value: %v\n", y, y)
 	fmt.Printf("Type: %T, Value: %v\n", z, z)
 	fmt.Printf("Type: %T, Value: %v\n", a, a)
+}
+
+// type inference lesson
+func typeInference() {
+	// inference to complex128
+	v := 42.23 + 2i
+	fmt.Printf("v is type of %T\n", v)
+
+	// inference to float64
+	w := 42.23
+	fmt.Printf("w is type of %T\n", w)
 }
