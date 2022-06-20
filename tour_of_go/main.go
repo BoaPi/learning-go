@@ -238,7 +238,7 @@ func loopWithoutOptionalStatements() {
 
 	fmt.Println("Start Value: ", sum)
 
-	for ; sum < 1000; {
+	for sum < 1000 {
 		sum += sum
 		fmt.Println("Value in loop: ", sum)
 	}
