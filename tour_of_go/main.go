@@ -24,6 +24,7 @@ func main() {
 		multiDeclareAndInitialization,
 		basicTypes,
 		zeroValues,
+		typeConversion,
 	}
 
 	runLessons(lessons)
@@ -154,4 +155,24 @@ var (
 // zero value lesson
 func zeroValues() {
 	fmt.Printf("%v %v %v %q\n", i, f, b, s)
+}
+
+// type conversion lesson
+func typeConversion() {
+	var i int = 42
+	var f float64 = float64(i)
+	var u uint = uint(f)
+
+	fmt.Printf("Type: %T, Value: %v\n", i, i)
+	fmt.Printf("Type: %T, Value: %v\n", f, f)
+	fmt.Printf("Type: %T, Value: %v\n", u, u)
+
+	var x, y int = 3, 4
+	var z float64 = math.Sqrt(float64(x*x + y*y))
+	var a uint = uint(f)
+
+	fmt.Printf("Type: %T, Value: %v\n", x, x)
+	fmt.Printf("Type: %T, Value: %v\n", y, y)
+	fmt.Printf("Type: %T, Value: %v\n", z, z)
+	fmt.Printf("Type: %T, Value: %v\n", a, a)
 }
