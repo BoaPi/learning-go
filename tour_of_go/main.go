@@ -26,6 +26,7 @@ func main() {
 		zeroValues,
 		typeConversion,
 		typeInference,
+		constLesson,
 	}
 
 	runLessons(lessons)
@@ -187,4 +188,12 @@ func typeInference() {
 	// inference to float64
 	w := 42.23
 	fmt.Printf("w is type of %T\n", w)
+}
+
+// const declaration and assignment
+func constLesson() {
+	const Pi = 3.14
+	const fuzz = "Some text that will not change"
+
+	fmt.Printf("Happy %v", Pi)
 }
