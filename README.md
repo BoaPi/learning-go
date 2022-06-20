@@ -66,4 +66,6 @@
 * [x] how to receive the parameter of a URL using gins `c.Param()`
 * [x] how to send a `404 - Not Found` response
 * [x] short assignments are only available inside function
+* [ ] some basic types
+* [ ] zero values of certain types when declaring without assigning a value
 * [ ] more to come...
