@@ -75,5 +75,6 @@
 * [x] that there is left shift `<<` & `>>` right shift operators
 * [x] `for loop` is build of `init statement`, `condition statement` and `post statement`
 * [x] `init statement` and `post statement` is optional
-* [ ] `for loop` is Go's `while` by omitting the optional statements
+* [x] `for loop` is Go's `while` by omitting the optional statements
+* [x] a `for loop` without any statement is an infinite loop
 * [ ] more to come...
