@@ -26,7 +26,8 @@ func main() {
 		zeroValues,
 		typeConversion,
 		typeInference,
-		constLesson,
+		constants,
+		moreConstants,
 	}
 
 	runLessons(lessons)
@@ -191,9 +192,29 @@ func typeInference() {
 }
 
 // const declaration and assignment
-func constLesson() {
+func constants() {
 	const Pi = 3.14
 	const fuzz = "Some text that will not change"
 
 	fmt.Printf("Happy %v", Pi)
+}
+
+func needInt(x int) int {
+	return x*10 + 1
+}
+
+func needFloat(x float64) float64 {
+	return x * 0.1
+}
+
+// more on constants
+func moreConstants() {
+	const (
+		big   = 1 << 100
+		small = big >> 99
+	)
+
+	fmt.Printf("Type: %T, Value: %v\n", needFloat(big), needFloat(big))
+	fmt.Printf("Type: %T, Value: %v\n", needInt(small), needInt(small))
+	fmt.Printf("Type: %T, Value: %v\n", needFloat(small), needFloat(small))
 }
