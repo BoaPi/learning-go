@@ -31,6 +31,7 @@ func main() {
 		simpleLoopToSum,
 		while,
 		ifLesson,
+		omittingIf,
 	}
 
 	runLessons(lessons)
@@ -258,4 +259,19 @@ func sqrt(x float64) string {
 
 func ifLesson() {
 	fmt.Println(sqrt(-9), sqrt(-4))
+}
+
+// omitting optional parts of a if statement
+func pow(x, n, lim float64) float64 {
+	if v := math.Pow(x, n); v < lim {
+		return v
+	}
+	return lim
+}
+
+func omittingIf() {
+	fmt.Println(
+		pow(3, 2, 10),
+		pow(3, 3, 20),
+	)
 }
