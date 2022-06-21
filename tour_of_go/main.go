@@ -32,6 +32,7 @@ func main() {
 		while,
 		ifLesson,
 		scopedIf,
+		useSqrt,
 	}
 
 	runLessons(lessons)
@@ -275,4 +276,34 @@ func pow(x, n, lim float64) float64 {
 func scopedIf() {
 	fmt.Println(pow(3, 2, 10))
 	fmt.Println(pow(3, 3, 20))
+}
+
+// exercise Loops and Functions, rebuild square root function
+func Sqrt(x float64) float64 {
+	// declare a start value for z
+	fmt.Println("Run custom Sqrt function for: ", x)
+	z := float64(1)
+	tmp := float64(0)
+
+	for i := 0; i <= 10; i++ {
+		z -= (z*z - x) / (2 * z)
+
+		if tmp != z {
+			tmp = z
+			fmt.Printf("run %v - narrowing z: %v\n", i+1, z)
+		} else {
+			return z
+		}
+	}
+
+	return z
+}
+
+func useSqrt() {
+	fmt.Printf("for 2 final value of z is: %v\n\n", Sqrt(2))
+	fmt.Printf("for 3 final value of z is: %v\n\n", Sqrt(3))
+	fmt.Printf("for 4 final value of z is: %v\n\n", Sqrt(4))
+	fmt.Printf("for 9 final value of z is: %v\n\n", Sqrt(9))
+	fmt.Printf("for 16 final value of z is: %v\n\n", Sqrt(16))
+	fmt.Printf("for 20 final value of z is: %v\n\n", Sqrt(20))
 }
