@@ -5,6 +5,7 @@ import (
 	"math"
 	"math/cmplx"
 	"math/rand"
+	"runtime"
 	"time"
 )
 
@@ -33,6 +34,7 @@ func main() {
 		ifLesson,
 		scopedIf,
 		useSqrt,
+		switchSimple,
 	}
 
 	runLessons(lessons)
@@ -306,4 +308,18 @@ func useSqrt() {
 	fmt.Printf("for 9 final value of z is: %v\n\n", Sqrt(9))
 	fmt.Printf("for 16 final value of z is: %v\n\n", Sqrt(16))
 	fmt.Printf("for 20 final value of z is: %v\n\n", Sqrt(20))
+}
+
+// switch lesson
+func switchSimple() {
+	fmt.Print("Go run on ")
+	switch os := runtime.GOOS; os {
+	case "darwin":
+		println("OS X")
+	case "linux":
+		println("Linux")
+	default:
+		// all the other freebsd, openbsd, windows, plan9
+		println("%s. \n", os)
+	}
 }
