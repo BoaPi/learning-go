@@ -40,6 +40,7 @@ func main() {
 		cleanSwitch,
 		deferFunction,
 		deferringFunctions,
+		startingPointer,
 	}
 
 	runLessons(lessons)
@@ -390,4 +391,16 @@ func deferringFunctions() {
 	for i := 0; i <= 5; i++ {
 		defer fmt.Println(i)
 	}
+}
+
+// some pointer stuff
+func startingPointer() {
+	// pointer to an integer
+	var p *int
+
+	i := 42
+	p = &i
+
+	fmt.Println("Value i: ", i)
+	fmt.Println("Operand p: ", p)
 }
