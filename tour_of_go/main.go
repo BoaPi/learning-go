@@ -402,5 +402,6 @@ func startingPointer() {
 	p = &i
 
 	fmt.Println("Value i: ", i)
-	fmt.Println("Operand p: ", p)
+	fmt.Println("Address of i, p: ", p)
+	fmt.Println("Value of pointer p: ", *p)
 }
