@@ -38,6 +38,8 @@ func main() {
 		switchDay,
 		switchFunctions,
 		cleanSwitch,
+		deferFunction,
+		deferringFunctions,
 	}
 
 	runLessons(lessons)
@@ -370,5 +372,22 @@ func cleanSwitch() {
 		fmt.Println("Good afternoon.")
 	default:
 		fmt.Println("Good evening.")
+	}
+}
+
+// deferring a function
+func deferFunction() {
+	defer fmt.Println("world")
+
+	fmt.Print("Hello ")
+}
+
+// defer cardio
+func deferringFunctions() {
+	fmt.Println("Counting down")
+	defer fmt.Println("Go Go Go")
+
+	for i := 0; i <= 5; i++ {
+		defer fmt.Println(i)
 	}
 }
