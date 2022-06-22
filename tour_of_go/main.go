@@ -36,6 +36,7 @@ func main() {
 		useSqrt,
 		switchSimple,
 		switchDay,
+		switchFunctions,
 	}
 
 	runLessons(lessons)
@@ -340,5 +341,17 @@ func switchDay() {
 		println("In 2 days - almost there")
 	default:
 		println("Way to far away")
+	}
+}
+
+// switch statement with functions
+func switchFunctions() {
+	switch i := 3; i {
+	case int(math.Sqrt(9)):
+		fmt.Println("Nailed it")
+	case int(math.Sqrt(16)):
+		fmt.Println("4 it is")
+	default:
+		println("It is not 3 or 4!")
 	}
 }
