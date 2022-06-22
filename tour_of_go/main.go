@@ -35,6 +35,7 @@ func main() {
 		scopedIf,
 		useSqrt,
 		switchSimple,
+		switchDay,
 	}
 
 	runLessons(lessons)
@@ -321,5 +322,23 @@ func switchSimple() {
 	default:
 		// all the other freebsd, openbsd, windows, plan9
 		println("%s. \n", os)
+	}
+}
+
+// switch case cardio
+func switchDay() {
+	fmt.Println("When is Saturday?")
+
+	today := time.Now().Weekday()
+
+	switch time.Saturday {
+	case today + 0:
+		println("Today - Yeah")
+	case today + 1:
+		println("Tomorrow - whoop weekend ahead")
+	case today + 2:
+		println("In 2 days - almost there")
+	default:
+		println("Way to far away")
 	}
 }
