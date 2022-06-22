@@ -78,5 +78,11 @@
 * [x] `for loop` is Go's `while` by omitting the optional statements
 * [x] a `for loop` without any statement is an infinite loop
 * [x] `if statements` do not need `()` around the statement but `{}` for the body
-* [ ] `if statements` can have scoped variables 
+* [x] `if statements` can have scoped variables
+* [x] using `switch statements` for a sequence of `if - else statements`
+* [x] how to get the running operating system with `runtime.GOOS`
+* [x] `switch cases` can run functions
+* [x] how to use `switch statements` for long if-then-else statements
+* [x] how to use `defer` to execute a function later
+* [x] that deferred functions are stacked and will be called in `last-in-first-out` order
 * [ ] more to come...
