@@ -37,6 +37,7 @@ func main() {
 		switchSimple,
 		switchDay,
 		switchFunctions,
+		cleanSwitch,
 	}
 
 	runLessons(lessons)
@@ -353,5 +354,21 @@ func switchFunctions() {
 		fmt.Println("4 it is")
 	default:
 		println("It is not 3 or 4!")
+	}
+}
+
+// using switch as a clean way for long if-then-else statements
+func cleanSwitch() {
+	t := time.Now()
+	fmt.Println("It is: ", t)
+
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Gooooood morning!")
+
+	case t.Hour() < 17:
+		fmt.Println("Good afternoon.")
+	default:
+		fmt.Println("Good evening.")
 	}
 }
