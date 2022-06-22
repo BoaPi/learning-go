@@ -85,4 +85,7 @@
 * [x] how to use `switch statements` for long if-then-else statements
 * [x] how to use `defer` to execute a function later
 * [x] that deferred functions are stacked and will be called in `last-in-first-out` order
+* [x] pointers holds memory address of a value
+* [x] zero value of a pointer is `nil`
+* [x] to call the an address of a value with `&<value>` and store it in an pointer
 * [ ] more to come...
