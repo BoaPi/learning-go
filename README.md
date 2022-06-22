@@ -88,4 +88,6 @@
 * [x] pointers holds memory address of a value
 * [x] zero value of a pointer is `nil`
 * [x] to call the an address of a value with `&<value>` and store it in an pointer
+* [x] how to read a value through a pointer by dereferencing or indirecting
+* [x] Go has no pointer arithmetic
 * [ ] more to come...
