@@ -55,6 +55,10 @@
 * [x] how to adjust zsh config to use installed binaries
 * [x] to name a module `main.go` if it is standalone program
 * [x] how to declare a `struct` for representing complex objects
+* [x] `struct` is a collection of fields
+* [x] how to use `pointers` and `struct` together
+* [x] how to declare `struts` in different ways
+* [x] how to access fields in `structs` with dot notation
 * [x] to use `json:"<key-name>"` to prevent capitalized JSON keys after serialization
 * [x] to use `Context.IndentedJSON` from `gin` for easy debugging, instead of `Context.JSON`
 * [x] how to initialize a `gin` router
