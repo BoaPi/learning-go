@@ -422,4 +422,18 @@ func structLesson() {
 	fmt.Println("Vertex Y: ", v.Y)
 }
 
-// 
+// pointer and struct
+func pointyStruct() {
+	var p *Vertex
+	v := Vertex{12, 15}
+
+	p = &v
+
+	fmt.Println("Pointer p to Vertex v, Value X ", p.X)
+	fmt.Println("Pointer p to Vertex v, Address p ", &p)
+
+	p.X = 1e12
+
+	fmt.Println("New Value X of Vertex v, after using pointer p to overwrite ", v)
+	fmt.Println("Pointer p to Vertex v, Address p ", &p)
+}
