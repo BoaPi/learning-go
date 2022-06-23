@@ -41,6 +41,7 @@ func main() {
 		deferFunction,
 		deferringFunctions,
 		startingPointer,
+		structLesson,
 	}
 
 	runLessons(lessons)
@@ -405,3 +406,20 @@ func startingPointer() {
 	fmt.Println("Address of i, p: ", p)
 	fmt.Println("Value of pointer p: ", *p)
 }
+
+// struct
+func structLesson() {
+	type Vertex struct {
+		X int
+		Y int
+	}
+
+	v :=  Vertex{1, 10}
+
+	fmt.Println("First struct ", v)
+
+	fmt.Println("Vertex X: ", v.X)
+	fmt.Println("Vertex Y: ", v.Y)
+}
+
+// 
