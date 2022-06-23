@@ -437,3 +437,15 @@ func pointyStruct() {
 	fmt.Println("New Value X of Vertex v, after using pointer p to overwrite ", v)
 	fmt.Println("Pointer p to Vertex v, Address p ", &p)
 }
+
+// declare some more struct
+func structDeclaration() {
+	var (
+		v1 = Vertex{1, 2}
+		v2 = Vertex{X: 3}
+		v3 = Vertex{}
+		p  = &Vertex{4, 5}
+	)
+
+	fmt.Println(v1, v2, v3, p)
+}
