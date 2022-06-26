@@ -46,6 +46,7 @@ func main() {
 		structDeclaration,
 		startingArrays,
 		startingSlices,
+		complexSlices,
 	}
 
 	runLessons(lessons)
@@ -476,4 +477,28 @@ func startingSlices() {
 	var s []int = primes[1:4]
 
 	fmt.Println("Slice of primes array: ", s)
+}
+
+// complex slice
+func complexSlices() {
+	names := [4]string{
+		"John",
+		"Paul",
+		"George",
+		"Ringo",
+	}
+
+	fmt.Printf("The Beatles are %q\n", names)
+	
+	a := names[0:2]
+	b := names[1:3]
+	
+	fmt.Println("Some Beatles are: ", a)
+	fmt.Println("Some Beatles are: ", b)
+	
+	b[0] = "XXX"
+	
+	fmt.Println("Some Beatles are no longer known: ", a)
+	fmt.Println("Some Beatles are no longer known: ", b)
+	fmt.Printf("The Beatles are %q\n", names)
 }
