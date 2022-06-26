@@ -34,7 +34,10 @@
 * [x] how to use `nil`
 * [x] `nil` is a return value for an error, that indicated that everything is fine
 * [x] how to short declare and assign variables
-* [x] a `slice` is an array with dynamic size
+* [x] a `slice` is an `array` with dynamic size
+* [x] an `array` has a fixed size
+* [x] a slice is specified by to indices, `lower` and `higher` bound
+* [x] `array[1:4]` is a half open range and will select 1st, 2nd and 3rd element
 * [x] lower case name of functions, makes them only accessible to the code in its own package
 * [x] use `math/rand` to create a seed
 * [x] use `init()` function to generate a new seed each program run
