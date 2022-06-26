@@ -38,6 +38,8 @@
 * [x] an `array` has a fixed size
 * [x] a slice is specified by to indices, `lower` and `higher` bound
 * [x] `array[1:4]` is a half open range and will select 1st, 2nd and 3rd element
+* [x] a `slice` does not hold data, it just describes a section of an underlying array
+* [x] changing data in a `slice` will change the corresponding elements in the underlying array and other `slices` which have the same elements
 * [x] lower case name of functions, makes them only accessible to the code in its own package
 * [x] use `math/rand` to create a seed
 * [x] use `init()` function to generate a new seed each program run
