@@ -45,6 +45,7 @@ func main() {
 		pointyStruct,
 		structDeclaration,
 		startingArrays,
+		startingSlices,
 	}
 
 	runLessons(lessons)
@@ -466,4 +467,13 @@ func startingArrays() {
 
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 	fmt.Println("all primes until 13", primes)
+}
+
+// slice lesson
+func startingSlices() {
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+
+	var s []int = primes[1:4]
+
+	fmt.Println("Slice of primes array: ", s)
 }
