@@ -47,6 +47,7 @@ func main() {
 		startingArrays,
 		startingSlices,
 		complexSlices,
+		literalSliceCardio,
 	}
 
 	runLessons(lessons)
@@ -489,16 +490,38 @@ func complexSlices() {
 	}
 
 	fmt.Printf("The Beatles are %q\n", names)
-	
+
 	a := names[0:2]
 	b := names[1:3]
-	
+
 	fmt.Println("Some Beatles are: ", a)
 	fmt.Println("Some Beatles are: ", b)
-	
+
 	b[0] = "XXX"
-	
+
 	fmt.Println("Some Beatles are no longer known: ", a)
 	fmt.Println("Some Beatles are no longer known: ", b)
 	fmt.Printf("The Beatles are %q\n", names)
+}
+
+// slice literals cardio
+func literalSliceCardio() {
+	q := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println("literally a slice ", q)
+
+	r := []bool{true, false, true, true, false, true}
+	fmt.Println("another slice ", r)
+
+	s := []struct {
+		i int
+		b bool
+	}{
+		{2, true},
+		{3, false},
+		{4, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+	fmt.Println("some complex struct slice ", s)
 }
