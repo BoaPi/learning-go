@@ -48,6 +48,7 @@ func main() {
 		startingSlices,
 		complexSlices,
 		literalSliceCardio,
+		slicingSlices,
 	}
 
 	runLessons(lessons)
@@ -524,4 +525,22 @@ func literalSliceCardio() {
 		{13, true},
 	}
 	fmt.Println("some complex struct slice ", s)
+}
+
+// more on slices
+func slicingSlices() {
+	s := []int{2, 3, 5, 7, 11, 13, 17}
+	fmt.Println("original slice ", s)
+
+	s = s[:]
+	fmt.Println("sliced slice ", s)
+
+	s = s[1:4]
+	fmt.Println("sliced slice ", s)
+
+	s = s[:2]
+	fmt.Println("sliced slice ", s)
+
+	s = s[1:]
+	fmt.Println("sliced slice ", s)
 }
