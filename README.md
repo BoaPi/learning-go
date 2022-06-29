@@ -45,6 +45,8 @@
 * [x] `slice literals` are building a `array` and also the `slice` as a reference on top of it
 * [x] `slices` can be sliced back and forth, e.g. `s[:2]`, `s[2:7]`, `s[4:]`
 * [x] zero value of a `slice` is `nil`
+* [x] `slices` can created with `make`
+* [x] with `make` len and capacity can be declared
 * [x] lower case name of functions, makes them only accessible to the code in its own package
 * [x] use `math/rand` to create a seed
 * [x] use `init()` function to generate a new seed each program run
