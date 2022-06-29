@@ -49,6 +49,7 @@ func main() {
 		complexSlices,
 		literalSliceCardio,
 		slicingSlices,
+		lengthAndCapacityOfSlice,
 	}
 
 	runLessons(lessons)
@@ -543,4 +544,26 @@ func slicingSlices() {
 
 	s = s[1:]
 	fmt.Println("sliced slice ", s)
+}
+
+// length and capacity of slices
+func printSlice(s []int) {
+	fmt.Printf("len: %d, cap: %d %v\n", len(s), cap(s), s)
+}
+
+func lengthAndCapacityOfSlice() {
+	s := []int{2, 3, 5, 7, 11, 13, 17}
+	printSlice(s)
+
+	// zero length slice
+	s = s[:0]
+	printSlice(s)
+
+	// extending the slice again
+	s = s[:4]
+	printSlice(s)
+
+	// drop first two values
+	s = s[2:]
+	printSlice(s)
 }
