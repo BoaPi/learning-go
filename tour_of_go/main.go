@@ -51,6 +51,7 @@ func main() {
 		slicingSlices,
 		lengthAndCapacityOfSlice,
 		nilSlice,
+		makeSlice,
 	}
 
 	runLessons(lessons)
@@ -548,25 +549,25 @@ func slicingSlices() {
 }
 
 // length and capacity of slices
-func printSlice(s []int) {
-	fmt.Printf("len: %d, cap: %d %v\n", len(s), cap(s), s)
+func printSlice(s string, x []int) {
+	fmt.Printf("%s len: %d, cap: %d %v\n", s, len(x), cap(x), x)
 }
 
 func lengthAndCapacityOfSlice() {
 	s := []int{2, 3, 5, 7, 11, 13, 17}
-	printSlice(s)
+	printSlice("s", s)
 
 	// zero length slice
 	s = s[:0]
-	printSlice(s)
+	printSlice("s", s)
 
 	// extending the slice again
 	s = s[:4]
-	printSlice(s)
+	printSlice("s", s)
 
 	// drop first two values
 	s = s[2:]
-	printSlice(s)
+	printSlice("s", s)
 }
 
 // zero value of a slice is nil
@@ -578,4 +579,19 @@ func nilSlice() {
 	if s == nil {
 		fmt.Println("nil!")
 	}
+}
+
+// make a slice
+func makeSlice() {
+	a := make([]int, 5)
+	printSlice("a", a)
+
+	b := make([]int, 0, 5)
+	printSlice("b", b)
+	
+	c := b[:2]
+	printSlice("c", c)
+	
+	d := c[2:5]
+	printSlice("d", d)
 }
