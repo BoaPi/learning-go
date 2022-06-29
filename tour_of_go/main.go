@@ -50,6 +50,7 @@ func main() {
 		literalSliceCardio,
 		slicingSlices,
 		lengthAndCapacityOfSlice,
+		nilSlice,
 	}
 
 	runLessons(lessons)
@@ -566,4 +567,15 @@ func lengthAndCapacityOfSlice() {
 	// drop first two values
 	s = s[2:]
 	printSlice(s)
+}
+
+// zero value of a slice is nil
+func nilSlice() {
+	var s []int
+
+	fmt.Println(s, len(s), cap(s))
+
+	if s == nil {
+		fmt.Println("nil!")
+	}
 }
