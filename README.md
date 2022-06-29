@@ -47,6 +47,7 @@
 * [x] zero value of a `slice` is `nil`
 * [x] `slices` can created with `make`
 * [x] with `make` len and capacity can be declared
+* [x] a `slice` can contain other `slices`or any other type
 * [x] lower case name of functions, makes them only accessible to the code in its own package
 * [x] use `math/rand` to create a seed
 * [x] use `init()` function to generate a new seed each program run
