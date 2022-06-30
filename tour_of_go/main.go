@@ -54,6 +54,7 @@ func main() {
 		nilSlice,
 		makeSlice,
 		slicesOfSlice,
+		appendSlice,
 	}
 
 	runLessons(lessons)
@@ -617,4 +618,21 @@ func slicesOfSlice() {
 	for i := 0; i < len(board); i++ {
 		fmt.Printf("%s\n", strings.Join(board[i], " "))
 	}
+}
+
+// appending some items to a slice
+func appendSlice() {
+	s := make([]int, 0, 2)
+	printSlice("s", s)
+
+	// works on nil slices
+	s = append(s, 1)
+	printSlice("s", s)
+
+	s = append(s, 2)
+	printSlice("s", s)
+
+	// also works with multiple elements
+	s = append(s, 3, 5, 7, 11)
+	printSlice("s", s)
 }
