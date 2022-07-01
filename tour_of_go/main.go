@@ -55,6 +55,7 @@ func main() {
 		makeSlice,
 		slicesOfSlice,
 		appendSlice,
+		firstRange,
 	}
 
 	runLessons(lessons)
@@ -635,4 +636,13 @@ func appendSlice() {
 	// also works with multiple elements
 	s = append(s, 3, 5, 7, 11)
 	printSlice("s", s)
+}
+
+// range lesson
+func firstRange() {
+	var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+
+	for i, v := range pow {
+		fmt.Printf("2**%d = %d\n", i, v)
+	}
 }
