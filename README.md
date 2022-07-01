@@ -50,6 +50,8 @@
 * [x] a `slice` can contain other `slices`or any other type
 * [x] `slices` have a built in method `append` to append new items to a slice
 * [x] `append` will allocate a new array, if the underlying array is to small
+* [x] how to loop over a `slice` with a `for` loop
+* [x] how to skip `index` or `value` of a range while looping
 * [x] lower case name of functions, makes them only accessible to the code in its own package
 * [x] use `math/rand` to create a seed
 * [x] use `init()` function to generate a new seed each program run
