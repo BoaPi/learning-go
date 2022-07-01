@@ -56,6 +56,7 @@ func main() {
 		slicesOfSlice,
 		appendSlice,
 		firstRange,
+		skippingRange,
 	}
 
 	runLessons(lessons)
@@ -644,5 +645,18 @@ func firstRange() {
 
 	for i, v := range pow {
 		fmt.Printf("2**%d = %d\n", i, v)
+	}
+}
+
+// skipping index or value of range
+func skippingRange() {
+	pow := make([]int, 10)
+
+	for i := range pow {
+		pow[i] = 1 << uint(i)
+	}
+
+	for _, v := range pow {
+		fmt.Printf("%d\n", v)
 	}
 }
