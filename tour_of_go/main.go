@@ -57,6 +57,7 @@ func main() {
 		appendSlice,
 		firstRange,
 		skippingRange,
+		sliceExercise,
 	}
 
 	runLessons(lessons)
@@ -659,4 +660,26 @@ func skippingRange() {
 	for _, v := range pow {
 		fmt.Printf("%d\n", v)
 	}
+}
+
+// official slice exercise
+func Pic(dx, dy int) [][]uint8 {
+	// create first slice which will include all the other slices
+	s := make([][]uint8, dy)
+
+	for i := 0; i < dy; i++ {
+		// create slice which will include the uint8 values
+		innerSlice := make([]uint8, dx)
+
+		for j := 0; j < dx; j++ {
+			innerSlice[j] = uint8(j)
+			s[i] = innerSlice
+		}
+	}
+
+	return s
+}
+
+func sliceExercise() {
+	fmt.Println(Pic(4, 9))
 }
