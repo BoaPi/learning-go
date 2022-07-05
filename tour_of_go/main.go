@@ -686,12 +686,12 @@ func sliceExercise() {
 }
 
 // first map lesson
-func mapLesson() {
-	// declare struct
-	type Vortex struct {
-		Lat, Long float64
-	}
+// declare struct
+type Vortex struct {
+	Lat, Long float64
+}
 
+func mapLesson() {
 	// declare map
 	var m map[string]Vortex
 	fmt.Println("Map zero value: ", m)
