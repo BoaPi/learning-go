@@ -57,9 +57,11 @@
 * [x] use `init()` function to generate a new seed each program run
 * [x] how to work with a slice
 * [x] get to know the packages `math` and `time`
-* [x] how to re-use an existing function adn build on it an other function that handles same input and output but as maps
+* [x] how to re-use an existing function and build on it an other function that handles same input and output but as maps
 * [x] what a `map` is, how to create a `map`, how to add entries to a `map` and what types needs to be defined on a `map`
 * [x] how to declare and assign values to a `map`
+* [x] the zero value of a `map` is `nil`
+* [x] `nil` maps have no keys, nor keys can be added
 * [x] how to write a simple loop
 * [x] how to add test cases with the name of the package `<package_name>_test.go`
 * [x] use the Go standard testing package for logging and reporting
