@@ -62,6 +62,11 @@
 * [x] how to declare and assign values to a `map`
 * [x] the zero value of a `map` is `nil`
 * [x] `nil` maps have no keys, nor keys can be added
+* [x] how to update a `map` key-value
+* [x] how to delete a `map` key-value
+* [x] how to test for a key-value in a `map` with a `two-value` assignment: `elem, ok := m["key"]`
+* [x] if key is in map, `ok`is `true` otherwise `false`
+* [x] if key is not in map, `elem` has the zero value of the map elements type
 * [x] how to write a simple loop
 * [x] how to add test cases with the name of the package `<package_name>_test.go`
 * [x] use the Go standard testing package for logging and reporting
