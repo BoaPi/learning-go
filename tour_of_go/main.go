@@ -59,6 +59,7 @@ func main() {
 		skippingRange,
 		sliceExercise,
 		mapLesson,
+		mapLiteral,
 	}
 
 	runLessons(lessons)
@@ -705,4 +706,17 @@ func mapLesson() {
 	}
 
 	fmt.Println(m["Bell Labs"])
+}
+
+func mapLiteral() {
+	var m = map[string]Vortex{
+		"Bell Labs": {
+			40.68433, -74.39967,
+		},
+		"Google": {
+			37.42202, -122.08408,
+		},
+	}
+
+	fmt.Println("Map m: ", m)
 }
