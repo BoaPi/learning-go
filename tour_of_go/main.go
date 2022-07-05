@@ -58,6 +58,7 @@ func main() {
 		firstRange,
 		skippingRange,
 		sliceExercise,
+		mapLesson,
 	}
 
 	runLessons(lessons)
@@ -682,4 +683,26 @@ func Pic(dx, dy int) [][]uint8 {
 
 func sliceExercise() {
 	fmt.Println(Pic(4, 9))
+}
+
+// first map lesson
+func mapLesson() {
+	// declare struct
+	type Vortex struct {
+		Lat, Long float64
+	}
+
+	// declare map
+	var m map[string]Vortex
+	fmt.Println("Map zero value: ", m)
+
+	// initialize map
+	m = make(map[string]Vortex)
+
+	// declare key-value in map
+	m["Bell Labs"] = Vortex{
+		40.68433, -74.39967,
+	}
+
+	fmt.Println(m["Bell Labs"])
 }
