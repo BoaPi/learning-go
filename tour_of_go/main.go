@@ -60,6 +60,7 @@ func main() {
 		sliceExercise,
 		mapLesson,
 		mapLiteral,
+		mutatingMaps,
 	}
 
 	runLessons(lessons)
@@ -719,4 +720,21 @@ func mapLiteral() {
 	}
 
 	fmt.Println("Map m: ", m)
+}
+
+// mutating maps
+func mutatingMaps() {
+	m := make(map[string]int)
+
+	m["answer"] = 42
+	fmt.Println("The value: ", m["answer"])
+
+	m["answer"] = 48
+	fmt.Println("The value: ", m["answer"])
+
+	delete(m, "answer")
+	fmt.Println("The value: ", m["answer"])
+
+	v, ok := m["answer"]
+	fmt.Println("The value: ", v, "The present?: ", ok)
 }
