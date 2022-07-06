@@ -61,6 +61,7 @@ func main() {
 		mapLesson,
 		mapLiteral,
 		mutatingMaps,
+		mapExercise,
 	}
 
 	runLessons(lessons)
@@ -737,4 +738,27 @@ func mutatingMaps() {
 
 	v, ok := m["answer"]
 	fmt.Println("The value: ", v, "The present?: ", ok)
+}
+
+// exercise maps
+func WordCount(s string) map[string]int {
+	splitWords := strings.Fields(s)
+	result := make(map[string]int)
+
+	for _, v := range splitWords {
+		fmt.Println(v)
+
+		_, state := result[v]
+		if state == true {
+			result[v] += 1
+		} else {
+			result[v] = 1
+		}
+	}
+
+	return result
+}
+
+func mapExercise() {
+	fmt.Println(WordCount("I am learning GO programming language and I love it. so so so so nice language"))
 }
