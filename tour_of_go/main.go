@@ -62,6 +62,7 @@ func main() {
 		mapLiteral,
 		mutatingMaps,
 		mapExercise,
+		functionsAsValues,
 	}
 
 	runLessons(lessons)
@@ -761,4 +762,19 @@ func WordCount(s string) map[string]int {
 
 func mapExercise() {
 	fmt.Println(WordCount("I am learning GO programming language and I love it. so so so so nice language"))
+}
+
+// functions as values
+func compute(fn func(float64, float64) float64) float64 {
+	return fn(3, 4)
+}
+
+func functionsAsValues() {
+	hypot := func(x, y float64) float64 {
+		return math.Sqrt(x*x + y*y)
+	}
+
+	fmt.Println(hypot(5, 12))
+	fmt.Println(compute(hypot))
+	fmt.Println(compute(math.Pow))
 }
