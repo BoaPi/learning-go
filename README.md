@@ -118,4 +118,6 @@
 * [x] to call the an address of a value with `&<value>` and store it in an pointer
 * [x] how to read a value through a pointer by dereferencing or indirecting
 * [x] Go has no pointer arithmetic
+* [x] `functions` are values
+* [x] `functions` can be passed also as function arguments
 * [ ] more to come...
