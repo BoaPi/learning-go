@@ -63,6 +63,7 @@ func main() {
 		mutatingMaps,
 		mapExercise,
 		functionsAsValues,
+		functionClosure,
 	}
 
 	runLessons(lessons)
@@ -777,4 +778,25 @@ func functionsAsValues() {
 	fmt.Println(hypot(5, 12))
 	fmt.Println(compute(hypot))
 	fmt.Println(compute(math.Pow))
+}
+
+// functions closure lesson
+func adder() func(int) int {
+	sum := 0
+
+	return func(x int) int {
+		sum += x
+		return sum
+	}
+}
+
+func functionClosure() {
+	pos, neg := adder(), adder()
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(
+			pos(i),
+			neg(-2*i),
+		)
+	}
 }
