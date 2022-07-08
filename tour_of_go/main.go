@@ -64,6 +64,7 @@ func main() {
 		mapExercise,
 		functionsAsValues,
 		functionClosure,
+		fibonacciClosure,
 	}
 
 	runLessons(lessons)
@@ -798,5 +799,26 @@ func functionClosure() {
 			pos(i),
 			neg(-2*i),
 		)
+	}
+}
+
+// fibonacci closure
+func fibonacci() func() int {
+	i := 0
+	j := 1
+
+	return func() int {
+		sum := i + j
+		j = i
+		i = sum
+		return j
+	}
+
+}
+
+func fibonacciClosure() {
+	f := fibonacci()
+	for i := 0; i < 10; i++ {
+		fmt.Println(f())
 	}
 }
