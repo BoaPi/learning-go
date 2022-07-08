@@ -120,4 +120,5 @@
 * [x] Go has no pointer arithmetic
 * [x] `functions` are values
 * [x] `functions` can be passed also as function arguments
+* [x] how to create a `function closure`
 * [ ] more to come...
