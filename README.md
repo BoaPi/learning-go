@@ -121,4 +121,8 @@
 * [x] `functions` are values
 * [x] `functions` can be passed also as function arguments
 * [x] how to create a `function closure`
+* [x] that Go has no classes
+* [x] `methods` can be defined on types
+* [x] `methods` are `functions` that have a receiver argument
+* [ ] 
 * [ ] more to come...
