@@ -66,6 +66,7 @@ func main() {
 		functionClosure,
 		fibonacciClosure,
 		firstMethod,
+		myFloatLesson,
 	}
 
 	runLessons(lessons)
@@ -838,4 +839,19 @@ func firstMethod() {
 	v := floatVertex{3, 4}
 
 	fmt.Println(v.Abs())
+}
+
+// second method lesson
+type MyFloat float64
+
+func (f MyFloat) Abs() float64 {
+	if f < 0 {
+		return float64(-f)
+	}
+	return float64(f)
+}
+
+func myFloatLesson() {
+	f := MyFloat(-math.Sqrt(2))
+	fmt.Println(f.Abs())
 }
