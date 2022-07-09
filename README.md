@@ -124,5 +124,7 @@
 * [x] that Go has no classes
 * [x] `methods` can be defined on types
 * [x] `methods` are `functions` that have a receiver argument
-* [ ] 
+* [x] `receiver argument` comes between `func` keyword and method name and names the receiving type
+* [x] it is only possible to declare `methods` with a receiver whose type is defined in the same package
+* [x] it is not possible to define methods on built-in types
 * [ ] more to come...
