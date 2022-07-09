@@ -65,6 +65,7 @@ func main() {
 		functionsAsValues,
 		functionClosure,
 		fibonacciClosure,
+		firstMethod,
 	}
 
 	runLessons(lessons)
@@ -821,4 +822,20 @@ func fibonacciClosure() {
 	for i := 0; i < 10; i++ {
 		fmt.Println(f())
 	}
+}
+
+// first method lesson
+type floatVertex struct {
+	X, Y float64
+}
+
+func (v floatVertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+
+func firstMethod() {
+
+	v := floatVertex{3, 4}
+
+	fmt.Println(v.Abs())
 }
