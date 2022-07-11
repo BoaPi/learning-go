@@ -127,4 +127,10 @@
 * [x] `receiver argument` comes between `func` keyword and method name and names the receiving type
 * [x] it is only possible to declare `methods` with a receiver whose type is defined in the same package
 * [x] it is not possible to define methods on built-in types
+* [x] how to write `pointer receivers` for `methods` on types, to change values and not act on a copy
+* [x] rule of thumb, on one type use only `value receivers` or `pointer receivers`
 * [ ] more to come...
+
+## topics to revisit
+
+* pass by value vs. pass by reference and when to use which
