@@ -67,6 +67,7 @@ func main() {
 		fibonacciClosure,
 		firstMethod,
 		myFloatLesson,
+		pointerReceiver,
 	}
 
 	runLessons(lessons)
@@ -854,4 +855,25 @@ func (f MyFloat) Abs() float64 {
 func myFloatLesson() {
 	f := MyFloat(-math.Sqrt(2))
 	fmt.Println(f.Abs())
+}
+
+// lesson on pinter receiver
+type PointerVertex struct {
+	X, Y float64
+}
+
+func (v PointerVertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
+}
+
+func (v *PointerVertex) Scale(f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
+}
+
+func pointerReceiver() {
+	v := PointerVertex{3, 4}
+
+	v.Scale(10)
+	fmt.Println(v.Abs())
 }
