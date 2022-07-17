@@ -68,6 +68,7 @@ func main() {
 		firstMethod,
 		myFloatLesson,
 		pointerReceiver,
+		typeChecking,
 	}
 
 	runLessons(lessons)
@@ -876,4 +877,40 @@ func pointerReceiver() {
 
 	v.Scale(10)
 	fmt.Println(v.Abs())
+}
+
+func typeChecking() {
+	type Dog struct {
+		category string
+		name     string
+		bark     func() string
+	}
+
+	type Cat struct {
+		category string
+		name     string
+		meow     func() string
+	}
+
+	MyDog := Dog{
+		category: "dog",
+		name:     "Rutherford",
+		bark:     func() string { return "woof" },
+	}
+
+	MyCat := Cat{
+		category: "dog",
+		name:     "Rutherford",
+		meow:     func() string { return "meeeeoooooowwwww" },
+	}
+
+	pets := [2]interface{}{MyDog, MyCat}
+
+	for _, pet := range pets {
+		if _, ok := pet.(Dog); ok {
+			fmt.Println("dog")
+			} else {
+			fmt.Println("cat")
+		}
+	}
 }
